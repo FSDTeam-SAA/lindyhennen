@@ -5,7 +5,7 @@ export default function Hero() {
     <section className="relative z-10 md:h-[92vh] h-[35vh] w-full flex items-center justify-center bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-black opacity-20 -z-10"></div>
       <div className="text-center lg:space-y-8 space-y-4 text-white">
-        <h1 className="lg:text-6xl md:text-4xl text-lg font-bold">
+        <h1 className="lg:text-6xl md:text-4xl text-lg font-bold text-white!">
           Find Your Perfect Home with Confidence
         </h1>
         <p className="lg:text-lg text-sm md:text-base text-shadow-lg text-shadow-black">
