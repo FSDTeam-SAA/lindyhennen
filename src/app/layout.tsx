@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/Footer";
+import { Toaster } from "sonner";
 
 const dmSerif = Poppins({
   subsets: ["latin"],
@@ -24,6 +26,8 @@ export default function RootLayout({
       <body className={`${dmSerif.className} antialiased`}>
         <Navbar />
         {children}
+          <Toaster position="top-center" richColors closeButton />
+        <Footer />
       </body>
     </html>
   );
