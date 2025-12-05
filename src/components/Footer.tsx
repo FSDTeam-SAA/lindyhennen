@@ -1,6 +1,6 @@
-import Link from "next/link"
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react"
-import Image from "next/image"
+import Link from "next/link";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import Image from "next/image";
 
 export const Footer = () => {
   return (
@@ -11,9 +11,17 @@ export const Footer = () => {
           {/* Company Info */}
           <div className="space-y-3">
             <div className="space-y-1">
-            <Image src={'/logomain.png'} width={175} height={60} className=" object-cover " alt="footer logo"/>
+              <Image
+                src={"/logomain.png"}
+                width={175}
+                height={60}
+                className=" object-cover "
+                alt="footer logo"
+              />
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed w-1/2">Helping you buy, sell, and value your home.</p>
+            <p className="text-sm text-gray-600 leading-relaxed w-1/2">
+              Helping you buy, sell, and value your home.
+            </p>
           </div>
 
           {/* Contact Info */}
@@ -21,16 +29,19 @@ export const Footer = () => {
             <h4 className="font-semibold text-gray-900">Contact Us</h4>
             <div className="space-y-2 text-sm text-gray-600">
               <p>
-                <span className="font-medium">Phone:</span> +1 (234) 567-8900
+                <span className="font-medium">Phone:</span> 320-250-1317
               </p>
               <p>
-                <span className="font-medium">Mail:</span> example@example.com
+                <span className="font-medium">Mail:</span>{" "}
+                lindy@centralmnrealty.com
               </p>
               <p>
-                <span className="font-medium">Also:</span> example@example.com
+                <span className="font-medium">Also:</span>{" "}
+                lindy@centralmnrealty.com
               </p>
               <p>
-                <span className="font-medium">Location:</span> Lorem Ipsum, Chudinoong
+                <span className="font-medium">Location:</span> 80 37th Ave S,
+                Saint cloud,MN 56301
               </p>
             </div>
           </div>
@@ -39,16 +50,32 @@ export const Footer = () => {
           <div className="space-y-4 ">
             <h4 className="font-semibold text-gray-900">Follow Us</h4>
             <div className="flex gap-4">
-              <Link href="#" className="text-gray-600 hover:text-purple-700 transition-colors" aria-label="Facebook">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-700 transition-colors"
+                aria-label="Facebook"
+              >
                 <Facebook size={20} />
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-purple-700 transition-colors" aria-label="Instagram">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-700 transition-colors"
+                aria-label="Instagram"
+              >
                 <Instagram size={20} />
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-purple-700 transition-colors" aria-label="LinkedIn">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-700 transition-colors"
+                aria-label="LinkedIn"
+              >
                 <Linkedin size={20} />
               </Link>
-              <Link href="#" className="text-gray-600 hover:text-purple-700 transition-colors" aria-label="Twitter">
+              <Link
+                href="#"
+                className="text-gray-600 hover:text-purple-700 transition-colors"
+                aria-label="Twitter"
+              >
                 <Twitter size={20} />
               </Link>
             </div>
@@ -65,7 +92,7 @@ export const Footer = () => {
         </div>
       </div>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
