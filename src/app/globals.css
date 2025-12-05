@@ -17,7 +17,17 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: var(--color-primary);
   font-weight: bold;
+}
+
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
 }
