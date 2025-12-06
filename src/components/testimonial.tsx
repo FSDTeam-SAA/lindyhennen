@@ -3,7 +3,6 @@
 import { Star } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
-import { id } from "zod/locales";
 
 export default function Testimonial() {
   const reviews = [

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin } from "lucide-react";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -43,9 +43,9 @@ export const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="space-y-4 text-end">
+          <div className="space-y-4 md:text-end">
             <h4 className="font-semibold text-gray-900">Follow Us</h4>
-            <div className="flex gap-4 justify-end">
+            <div className="flex gap-4 md:justify-end">
               <Link
                 href="#"
                 className="text-gray-600 hover:text-purple-700 transition-colors"
