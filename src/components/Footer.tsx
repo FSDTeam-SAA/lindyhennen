@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export const Footer = () => {
   return (
-    <footer className="bg-gradient-to-br from-pink-50 via-white to-pink-50  ">
+    <footer className="bg-linear-to-br from-pink-50 via-white to-pink-50">
       <div className="container mx-auto px-4 md:px-8 py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -27,21 +27,17 @@ export const Footer = () => {
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="font-semibold text-gray-900">Contact Us</h4>
-            <div className="space-y-2 text-sm text-gray-600">
-              <p>
-                <span className="font-medium">Phone:</span> 320-250-1317
-              </p>
-              <p>
+            <div className="space-y-2 text-sm text-gray-600 flex flex-col">
+              <a href="tell:13202501317">
+                <span className="font-medium">Phone:</span> +13202501317
+              </a>
+              <a href="mailto:lindy@centralmnrealty.com">
                 <span className="font-medium">Mail:</span>{" "}
                 lindy@centralmnrealty.com
-              </p>
+              </a>
               <p>
-                <span className="font-medium">Also:</span>{" "}
-                lindy@centralmnrealty.com
-              </p>
-              <p>
-                <span className="font-medium">Location:</span> 80 37th Ave S,
-                Saint cloud,MN 56301
+                <span className="font-medium">Location:</span> 80 37th Ave S, 80
+                37th Ave S #200, St Cloud, MN 56301, USA
               </p>
             </div>
           </div>
@@ -86,9 +82,11 @@ export const Footer = () => {
         <div className="border-t border-pink-200 my-8" />
 
         {/* Bottom Footer */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-600">
-          <p>© 2025 CentralMN Realty. All rights reserved.</p>
-          <p>Designed by - Sahed</p>
+        <div className="flex flex-col md:flex-row justify-center items-center gap-4 text-sm text-gray-600">
+          <p>
+            © {new Date().getFullYear()} - Central MN Realty. All rights
+            reserved.
+          </p>
         </div>
       </div>
     </footer>
