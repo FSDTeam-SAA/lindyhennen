@@ -7,7 +7,6 @@ import {
   X,
   Menu,
   Facebook,
-  Twitter,
   Linkedin,
   Phone,
   Mail,
@@ -21,8 +20,8 @@ export default function Navbar() {
     <>
       {/* Main Navbar */}
       <nav className="bg-linear-to-tr from-pink-200 via-white to-pink-200 border-b border-gray-200">
-        <div className="container mx-auto">
-          <div className="lg:pt-5 flex items-center justify-between">
+        <div className="container mx-auto hidden md:block">
+          <div className="md:pt-3 flex items-center justify-between">
             <div className="items-center gap-3 hidden md:flex">
               <a
                 href="tell:13202501317"
@@ -47,14 +46,6 @@ export default function Navbar() {
                 className="text-gray-700 hover:text-primary transition-colors"
               >
                 <Instagram />
-              </a>
-              <a
-                href="https://twitter.com/MernSahed"
-                target="_blank"
-                aria-label="Twitter"
-                className="text-gray-700 hover:text-primary transition-colors"
-              >
-                <Twitter />
               </a>
               <a
                 href="https://www.linkedin.com/in/mern-sahed/"
@@ -174,14 +165,6 @@ export default function Navbar() {
                   className="flex items-center justify-center rounded-full text-primary transition-colors"
                 >
                   <Facebook />
-                </a>
-                <a
-                  href="#"
-                  target="_blank"
-                  aria-label="Instagram"
-                  className="flex items-center justify-center rounded-full text-primary transition-colors"
-                >
-                  <Twitter />
                 </a>
                 <a
                   href="#"

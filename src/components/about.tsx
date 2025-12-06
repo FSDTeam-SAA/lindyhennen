@@ -61,7 +61,7 @@ export default function About() {
   ];
   return (
     <section className="lg:pt-20 pt-8 pb-5">
-      <div className="container mx-auto px-2 lg:px-0">
+      <div className="container mx-auto">
         <div className="space-y-12">
           {/* About Hennen Content */}
           <div className="grid grid-cols-1 lg:grid-cols-5 items-center lg:gap-10 gap-5">

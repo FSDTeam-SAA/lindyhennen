@@ -5,7 +5,7 @@ import Image from "next/image";
 export const Footer = () => {
   return (
     <footer className="bg-linear-to-br from-pink-50 via-white to-pink-50">
-      <div className="container mx-auto px-4 md:px-8 py-12">
+      <div className="container mx-auto py-12">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Company Info */}
@@ -19,7 +19,7 @@ export const Footer = () => {
                 alt="footer logo"
               />
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed w-1/2">
+            <p className="text-sm text-gray-600 leading-relaxed lg:w-1/2">
               Helping you buy, sell, and value your home.
             </p>
           </div>
@@ -27,11 +27,11 @@ export const Footer = () => {
           {/* Contact Info */}
           <div className="space-y-4">
             <h4 className="font-semibold text-gray-900">Contact Us</h4>
-            <div className="space-y-2 text-sm text-gray-600 flex flex-col">
-              <a href="tell:13202501317">
+            <div className="space-y-2 text-sm text-gray-600 inline-flex flex-col">
+              <a href="tell:13202501317" className="inline">
                 <span className="font-medium">Phone:</span> +13202501317
               </a>
-              <a href="mailto:lindy@centralmnrealty.com">
+              <a href="mailto:lindy@centralmnrealty.com" className="inline">
                 <span className="font-medium">Mail:</span>{" "}
                 lindy@centralmnrealty.com
               </a>
@@ -43,9 +43,9 @@ export const Footer = () => {
           </div>
 
           {/* Social Links */}
-          <div className="space-y-4 ">
+          <div className="space-y-4 text-end">
             <h4 className="font-semibold text-gray-900">Follow Us</h4>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-end">
               <Link
                 href="#"
                 className="text-gray-600 hover:text-purple-700 transition-colors"
@@ -66,13 +66,6 @@ export const Footer = () => {
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-purple-700 transition-colors"
-                aria-label="Twitter"
-              >
-                <Twitter size={20} />
               </Link>
             </div>
           </div>

@@ -76,7 +76,7 @@ export const SentUsMessage = () => {
 
   return (
     <section className="my-16 md:my-20">
-      <div className="container mx-auto px-4 md:px-8">
+      <div className="container mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 items-center">
           {/* Image Section */}
           <div className="hidden lg:flex items-center justify-center">
