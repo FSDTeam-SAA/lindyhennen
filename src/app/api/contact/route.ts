@@ -6,21 +6,18 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { firstName, lastName, email, phone, message } = body;
 
-    // Create a transporter using Outlook SMTP
+    // Gmail SMTP transporter
     const transporter = nodemailer.createTransport({
-      host: "smtp.office365.com", // Outlook SMTP server
-      port: 587,                  // TLS port
-      secure: false,              // Use TLS
+      service: "gmail",
       auth: {
-        user: process.env.SMTP_USER,     // Your Outlook email
-        pass: process.env.SMTP_PASSWORD, // Your Outlook password or app password
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_APP_PASS,
       },
     });
 
-    // Email content
     const mailOptions = {
-      from: process.env.SMTP_USER,
-      to: process.env.SMTP_USER, // You can change this to any recipient
+      from: `Website Contact Form <${process.env.GMAIL_USER}>`,
+      to: process.env.GMAIL_USER,
       subject: `New Contact Form Submission`,
       html: `
         <h2>New Contact Form Submission</h2>
@@ -32,7 +29,6 @@ export async function POST(request: Request) {
       `,
     };
 
-    // Send email
     await transporter.sendMail(mailOptions);
 
     return NextResponse.json({ success: true }, { status: 200 });
@@ -40,7 +36,7 @@ export async function POST(request: Request) {
     console.error("Error sending email:", error);
     return NextResponse.json(
       { error: "Failed to send email" },
-      { status: 500 },
+      { status: 500 }
     );
   }
 }
