@@ -32,7 +32,7 @@ export default function Navbar() {
                 <span>+13202501317</span>
               </a>
               <a
-                href="https://www.facebook.com/mern.sahed"
+                href="https://www.facebook.com/p/Lindy-Hennen-Central-MN-Realty-61566614890390"
                 target="_blank"
                 aria-label="Globe"
                 className="text-gray-700 hover:text-primary transition-colors"
@@ -40,7 +40,7 @@ export default function Navbar() {
                 <Facebook />
               </a>
               <a
-                href="https://www.facebook.com/mern.sahed"
+                href="https://www.instagram.com/lindyhennen/?hl=en"
                 target="_blank"
                 aria-label="Globe"
                 className="text-gray-700 hover:text-primary transition-colors"
@@ -48,12 +48,46 @@ export default function Navbar() {
                 <Instagram />
               </a>
               <a
-                href="https://www.linkedin.com/in/mern-sahed/"
+                href="https://www.zillow.com/profile/Lindy%20Hennen"
                 target="_blank"
                 aria-label="LinkedIn"
                 className="text-gray-700 hover:text-primary transition-colors"
               >
-                <Linkedin />
+                <Image
+                  src="/zillow.png"
+                  width={25}
+                  height={25}
+                  alt="Zillow"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
+              </a>
+              <a
+                href="https://www.realtor.com/realestateagents/669fde267a0551d13088d374"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Image
+                  src="/realtor.png"
+                  width={25}
+                  height={25}
+                  alt="Realtor"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
+              </a>
+              <a
+                href="https://www.homes.com/real-estate-agents/lindy-hennen/mfp63hj"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Image
+                  src="/homes.png"
+                  width={25}
+                  height={25}
+                  alt="Homes"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
               </a>
             </div>
             <a

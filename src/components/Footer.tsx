@@ -1,5 +1,4 @@
-import Link from "next/link";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 import Image from "next/image";
 
 export const Footer = () => {
@@ -46,27 +45,64 @@ export const Footer = () => {
           <div className="space-y-4 md:text-end">
             <h4 className="font-semibold text-gray-900">Follow Us</h4>
             <div className="flex gap-4 md:justify-end">
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-purple-700 transition-colors"
-                aria-label="Facebook"
+              <a
+                href="https://www.facebook.com/p/Lindy-Hennen-Central-MN-Realty-61566614890390"
+                target="_blank"
+                aria-label="Globe"
+                className="text-gray-700 hover:text-primary transition-colors"
               >
-                <Facebook size={20} />
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-purple-700 transition-colors"
-                aria-label="Instagram"
+                <Facebook />
+              </a>
+              <a
+                href="https://www.instagram.com/lindyhennen/?hl=en"
+                target="_blank"
+                aria-label="Globe"
+                className="text-gray-700 hover:text-primary transition-colors"
               >
-                <Instagram size={20} />
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-600 hover:text-purple-700 transition-colors"
+                <Instagram />
+              </a>
+              <a
+                href="https://www.zillow.com/profile/Lindy%20Hennen"
+                target="_blank"
                 aria-label="LinkedIn"
+                className="text-gray-700 hover:text-primary transition-colors"
               >
-                <Linkedin size={20} />
-              </Link>
+                <Image
+                  src="/zillow.png"
+                  width={25}
+                  height={25}
+                  alt="Zillow"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
+              </a>
+              <a
+                href="https://www.realtor.com/realestateagents/669fde267a0551d13088d374"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Image
+                  src="/realtor.png"
+                  width={25}
+                  height={25}
+                  alt="Realtor"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
+              </a>
+              <a
+                href="https://www.homes.com/real-estate-agents/lindy-hennen/mfp63hj"
+                target="_blank"
+                aria-label="LinkedIn"
+                className="text-gray-700 hover:text-primary transition-colors"
+              >
+                <Image
+                  src="/homes.png"
+                  width={25}
+                  height={25}
+                  alt="Homes"
+                  className="saturate-0 hover:saturate-100 duration-300"
+                />
+              </a>
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${dmSerif.className} antialiased`}>
         <Navbar />
         {children}
-          <Toaster position="top-center" richColors closeButton />
+        <Toaster position="top-center" />
         <Footer />
       </body>
     </html>
