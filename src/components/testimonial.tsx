@@ -114,7 +114,7 @@ export default function Testimonial() {
 
   return (
     <section className="lg:py-20 py-8">
-      <div className="container mx-auto min-h-screen relative overflow-hidden lg:overflow-visible z-20 bg-[url('/testimonial.png')] bg-cover bg-center bg-no-repeat">
+      <div className="container mx-auto min-h-screen relative overflow-hidden xl:overflow-visible z-20 bg-[url('/testimonial.png')] bg-cover bg-center bg-no-repeat">
         <div className="absolute right-0 -top-12 z-10">
           <Image
             src="/client1.png"
@@ -152,20 +152,25 @@ export default function Testimonial() {
           />
         </div>
 
-        <div className="absolute inset-0 w-full bg-black opacity-80 z-10 lg:hidden rounded-md"></div>
+        <div className="absolute inset-0 w-full bg-black opacity-80 z-10 xl:hidden rounded-md"></div>
 
         <div className="h-screen flex justify-center items-center z-30 relative">
-          <div className="space-y-16 max-w-4xl">
+          <div className="space-y-16 max-w-4xl relative z-20 p-2">
+            <div className="absolute inset-0 w-full bg-black opacity-70 -z-10 h-full rounded-md"></div>
             <div className="text-center space-y-4">
-              <h5 className="lg:text-base text-sm text-white! lg:text-primary!">Testimoninials</h5>
-              <h2 className="lg:text-6xl font-bold text-white! lg:text-primary!">What My Clients Say</h2>
+              <h5 className="lg:text-base text-sm text-white!">
+                Testimoninials
+              </h5>
+              <h2 className="lg:text-6xl font-bold text-white!">
+                What My Clients Say
+              </h2>
             </div>
             <div className="relative w-full max-w-3xl mx-auto px-2 lg:px-0">
               {/* Review Item */}
               <div className="p-4 border border-primary rounded-lg shadow-sm">
                 <div>
                   <div className="flex items-center justify-between">
-                    <h5 className="text-white! lg:text-primary!">{review.name}</h5>
+                    <h5 className="text-white!">{review.name}</h5>
                     <div className="flex items-center gap-1">
                       {[1, 2, 3, 4, 5].map((star) =>
                         star <= review.rating ? (
@@ -181,10 +186,14 @@ export default function Testimonial() {
                     </div>
                   </div>
                 </div>
-                <p className="mt-2 text-white! lg:text-primary!">{review.comment}</p>
+                <p className="mt-2 text-white!">{review.comment}</p>
               </div>
-              <div className="text-end text-white lg:text-primary translate-y-1 lg:translate-y-4">
-                <a href={review.href} target="_blank" className="text-xs lg:text-base">
+              <div className="text-end text-white">
+                <a
+                  href={review.href}
+                  target="_blank"
+                  className="text-xs lg:text-base"
+                >
                   See review on google
                 </a>
               </div>
