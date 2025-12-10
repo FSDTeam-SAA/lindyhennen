@@ -97,7 +97,7 @@ export const SentUsMessage = () => {
           {/* Form Section */}
           <div className="space-y-6">
             <div className="space-y-2">
-              <p className="text-sm font-medium text-primary">Contact me</p>
+              <p className="text-sm font-medium text-primary">Contact Me</p>
               <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
                 Send Me a Message
               </h2>
