@@ -7,7 +7,6 @@ import {
   X,
   Menu,
   Facebook,
-  Linkedin,
   Phone,
   Mail,
   Instagram,
