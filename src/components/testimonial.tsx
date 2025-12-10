@@ -194,7 +194,7 @@ export default function Testimonial() {
                   target="_blank"
                   className="text-xs lg:text-base"
                 >
-                  See review on google
+                  See review on Google
                 </a>
               </div>
 
