@@ -11,39 +11,35 @@ export const Footer = () => {
           <div className="space-y-3">
             <div className="space-y-1">
               <Image
-                src={"/logomain.png"}
+                src={"/footer-logo.png"}
                 width={175}
                 height={60}
                 className=" object-cover "
                 alt="footer logo"
               />
             </div>
-            <p className="text-sm text-gray-600 leading-relaxed lg:w-1/2">
-              Helping you buy, sell, and value your home.
-            </p>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-gray-900">Contact Us</h4>
+            <h4 className="font-semibold text-gray-900">Get In Touch</h4>
             <div className="space-y-2 text-sm text-gray-600 inline-flex flex-col">
-              <a href="tell:13202501317" className="inline">
-                <span className="font-medium">Phone:</span> +13202501317
+              <a href="tell:3202501317" className="inline">
+                <span className="font-medium">Phone:</span> 320-250-1317
               </a>
               <a href="mailto:lindy@centralmnrealty.com" className="inline">
-                <span className="font-medium">Mail:</span>{" "}
+                <span className="font-medium">Email:</span>{" "}
                 lindy@centralmnrealty.com
               </a>
               <p>
-                <span className="font-medium">Location:</span> 80 37th Ave S, 80
-                37th Ave S #200, St Cloud, MN 56301, USA
+                <span className="font-medium">Office:</span> 80 37th Ave S #200,
+                St. Cloud, MN 56301
               </p>
             </div>
           </div>
 
           {/* Social Links */}
           <div className="space-y-4 md:text-end">
-            <h4 className="font-semibold text-gray-900">Follow Us</h4>
             <div className="flex gap-4 md:justify-end">
               <a
                 href="https://www.facebook.com/p/Lindy-Hennen-Central-MN-Realty-61566614890390"

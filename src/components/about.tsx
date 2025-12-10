@@ -77,7 +77,7 @@ export default function About() {
             <div className="lg:col-span-3">
               <div className="lg:space-y-12 space-y-7">
                 <div className="lg:space-y-5 space-y-2">
-                  <h5 className="text-sm">About me</h5>
+                  <h5 className="text-sm">About Me</h5>
                   <h2 className="lg:text-5xl text-2xl font-bold">
                     Lindy Hennen
                   </h2>
