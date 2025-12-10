@@ -24,12 +24,12 @@ export default function Navbar() {
           <div className="md:pt-3 flex items-center justify-between">
             <div className="items-center gap-3 hidden md:flex">
               <a
-                href="tell:13202501317"
+                href="tell:3202501317"
                 className="flex items-center gap-1 text-gray-700 hover:text-primary transition-colors text-lg"
               >
                 {" "}
                 <Phone className="w-5 h-5" />
-                <span>+13202501317</span>
+                <span>320-250-1317</span>
               </a>
               <a
                 href="https://www.facebook.com/p/Lindy-Hennen-Central-MN-Realty-61566614890390"
@@ -156,57 +156,96 @@ export default function Navbar() {
                 className="block text-primary font-semibold text-lg transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Homepage
+                Home
               </Link>
               <Link
                 href="/contact"
                 className="block text-primary font-semibold text-lg transition-colors"
                 onClick={() => setIsOpen(false)}
               >
-                Contact Us
+                Contact Me
               </Link>
             </div>
 
             {/* Contact Information */}
             <div className="lg:px-6 px-3 py-6 border-t border-white/20">
               <h3 className="text-primary font-semibold text-sm uppercase tracking-wide mb-4">
-                Contact Us
+                Get In Touch
               </h3>
               <div className="space-y-3 text-sm text-[#575F65] flex flex-col">
-                <a href="tell:13202501317">
-                  <span className="">Phone:</span> +13202501317
+                <a href="tell:3202501317">
+                  <span className="">Phone:</span> 320-250-1317
                 </a>
                 <a href="mailto:lindy@centralmnrealty.com">
-                  <span className="">Mail:</span> lindy@centralmnrealty.com
+                  <span className="">Email:</span> lindy@centralmnrealty.com
                 </a>
                 <p>
-                  <span className="">Location:</span> 80 37th Ave S #200, St
-                  Cloud, MN 56301, USA
+                  <span className="">Office:</span> 80 37th Ave S #200, St.
+                  Cloud, MN 56301
                 </p>
               </div>
             </div>
 
             {/* Social Links */}
             <div className="lg:px-6 px-3 py-6 border-t border-white/20">
-              <h3 className="text-primary font-semibold text-sm uppercase tracking-wide mb-4">
-                Follow Us
-              </h3>
               <div className="flex gap-4">
                 <a
-                  href="https://www.facebook.com/mern.sahed"
+                  href="https://www.facebook.com/p/Lindy-Hennen-Central-MN-Realty-61566614890390"
                   target="_blank"
-                  aria-label="Facebook"
-                  className="flex items-center justify-center rounded-full text-primary transition-colors"
+                  aria-label="Globe"
+                  className="text-gray-700 hover:text-primary transition-colors"
                 >
                   <Facebook />
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/lindyhennen/?hl=en"
+                  target="_blank"
+                  aria-label="Globe"
+                  className="text-gray-700 hover:text-primary transition-colors"
+                >
+                  <Instagram />
+                </a>
+                <a
+                  href="https://www.zillow.com/profile/Lindy%20Hennen"
                   target="_blank"
                   aria-label="LinkedIn"
-                  className="flex items-center justify-center rounded-full text-primary transition-colors"
+                  className="text-gray-700 hover:text-primary transition-colors"
                 >
-                  <Linkedin />
+                  <Image
+                    src="/zillow.png"
+                    width={25}
+                    height={25}
+                    alt="Zillow"
+                    className="saturate-0 hover:saturate-100 duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.realtor.com/realestateagents/669fde267a0551d13088d374"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  className="text-gray-700 hover:text-primary transition-colors"
+                >
+                  <Image
+                    src="/realtor.png"
+                    width={25}
+                    height={25}
+                    alt="Realtor"
+                    className="saturate-0 hover:saturate-100 duration-300"
+                  />
+                </a>
+                <a
+                  href="https://www.homes.com/real-estate-agents/lindy-hennen/mfp63hj"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  className="text-gray-700 hover:text-primary transition-colors"
+                >
+                  <Image
+                    src="/homes.png"
+                    width={25}
+                    height={25}
+                    alt="Homes"
+                    className="saturate-0 hover:saturate-100 duration-300"
+                  />
                 </a>
               </div>
             </div>
