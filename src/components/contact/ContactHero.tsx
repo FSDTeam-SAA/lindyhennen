@@ -9,7 +9,7 @@ const ContactHero = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className=" text-white">
           <h5 className="text-sm font-normal leading-[120%]  mb-3 text-white!">
-            Contact me
+            Contact Me
           </h5>
           <h2 className="text-lg md:text-4xl py-3 font-bold text-white!">
             Send Me a Message
